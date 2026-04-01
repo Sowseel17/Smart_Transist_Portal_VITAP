@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Smart Transit Portal</title>
+  <meta name="description" content="Create your Smart Transit account for VIT-AP route planning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <main class="container auth-page-wrap">
+    <section class="auth-page-card" aria-label="User sign up">
+      <p class="eyebrow">Create Account</p>
+      <h1>Sign Up For Smart Transit</h1>
+      <p class="subtitle">Create your account to save planner progress and quickly access routes from VIT-AP.</p>
+
+      <form id="signup-form" class="auth-form">
+        <div class="form-group">
+          <label for="signup-name">Full Name</label>
+          <input id="signup-name" type="text" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-email">Email</label>
+          <input id="signup-email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input id="signup-password" type="password" placeholder="Create a password" required>
+        </div>
+        <button type="submit" class="primary-btn">Create Account</button>
+        <p id="signup-message" class="form-message" aria-live="polite"></p>
+      </form>
+
+      <p class="form-link-row">Already have an account? <a href="index.html">Back to Sign In</a></p>
+    </section>
+  </main>
+
+  <script src="signup.js"></script>
+</body>
+</html>

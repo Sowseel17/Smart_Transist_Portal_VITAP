@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment | Smart Transit Portal</title>
+  <meta name="description" content="Choose a payment type and confirm your transport booking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <main class="container payment-layout">
+    <section class="planner-panel">
+      <p class="eyebrow">Final Step</p>
+      <h1>Choose Payment Type</h1>
+      <p class="subtitle">Select your payment option to confirm ride booking.</p>
+
+      <section id="booking-summary" class="selected-transport"></section>
+
+      <h3>Payment Scenarios</h3>
+      <div id="payment-options" class="payment-grid"></div>
+      <p id="payment-message" class="form-message" aria-live="polite"></p>
+
+      <div class="action-row payment-actions">
+        <button id="confirm-payment" type="button" class="primary-btn">Confirm Booking</button>
+        <button id="back-dashboard" type="button" class="secondary-btn">Back To Dashboard</button>
+      </div>
+
+      <section id="ride-status" class="ride-status hidden" aria-live="polite">
+        <h3>Live Ride Status</h3>
+        <ul id="status-list" class="status-list"></ul>
+      </section>
+    </section>
+  </main>
+
+  <script src="payment.js"></script>
+</body>
+</html>

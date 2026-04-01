@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Transit Portal | VIT-AP</title>
+  <meta name="description" content="Smart travel planner from VIT-AP with sign in, trip setup, and transport mode selection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <main class="container auth-page-wrap">
+    <section class="auth-page-card" aria-label="User sign in">
+      <p class="eyebrow">Smart Transit</p>
+      <h1>Sign In</h1>
+      <p class="subtitle">Register as a new user or sign in to continue your booking flow.</p>
+
+      <form id="signin-form" class="auth-form">
+        <div class="form-group">
+          <label for="signin-email">Email</label>
+          <input id="signin-email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="signin-password">Password</label>
+          <input id="signin-password" type="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="primary-btn">Sign In</button>
+        <p id="signin-message" class="form-message" aria-live="polite"></p>
+      </form>
+
+      <p class="form-link-row">New user? <a href="signup.html">Register here</a></p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>Smart Transit Portal for VIT-AP | Front-end project using HTML, CSS, and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
